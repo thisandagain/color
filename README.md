@@ -1,10 +1,7 @@
 ## Color
-#### Categories and utilities for UIColor
-
-`EDColor` is a set of categories and utilities that extend the functionality of `UIColor`.
 
 ### Getting Started
-The fastest way to get started with `EDColor` is to add the contents of the `EDColor` directly to your project and...
+The fastest way to get started with `EDColor` is to add the `EDColor` directory to your project and...
 ```objective-c
 #import "EDColor.h"
 ```
@@ -24,6 +21,8 @@ UIColor *gray   = [UIColor colorWithHexString:@"0xCCC"];
 ### UIColor+Crayola
 
 ### UIColor+Pantone
+
+---
 
 ### Testing
 The test suite for `EDColor` is built using OCUnit. To run the test suite, simply open the project in XCode and choose "test" from the Product menu. Please run and augment the tests prior to submitting a pull request.
