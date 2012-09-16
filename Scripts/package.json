@@ -1,0 +1,17 @@
+{
+  "author": "",
+  "name": "colorScripts",
+  "version": "0.0.0",
+  "dependencies": {
+    "request": "~2.11.1",
+    "optimist": "~0.3.4",
+    "jquery": "~1.7.3",
+    "async": "~0.1.22",
+    "jsdom": "~0.2.15"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
