@@ -79,7 +79,7 @@
     float b = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:4]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:5]]];
     float a = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:6]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:7]]];
     
-    return [UIColor colorWithRed:r/255 green:g/255 blue:b/255 alpha:a/255];
+    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
 }
 
 @end
