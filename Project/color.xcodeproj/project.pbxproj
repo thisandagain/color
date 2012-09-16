@@ -33,6 +33,9 @@
 		C32F6DA0160569B0004BA8A1 /* UIColor+Crayola.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6D9F160569B0004BA8A1 /* UIColor+Crayola.m */; };
 		C32F6DA1160569B0004BA8A1 /* UIColor+Crayola.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6D9F160569B0004BA8A1 /* UIColor+Crayola.m */; };
 		C32F6DA6160591BF004BA8A1 /* EDColorCrayolaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DA5160591BF004BA8A1 /* EDColorCrayolaTest.m */; };
+		C32F6DA916064462004BA8A1 /* UIColor+HSB.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DA816064462004BA8A1 /* UIColor+HSB.m */; };
+		C32F6DAA16064462004BA8A1 /* UIColor+HSB.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DA816064462004BA8A1 /* UIColor+HSB.m */; };
+		C32F6DAD16064CFE004BA8A1 /* EDColorHSBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DAC16064CFE004BA8A1 /* EDColorHSBTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,10 @@
 		C32F6DA216056F0F004BA8A1 /* Crayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crayola.h; path = ../EDColor/Crayola.h; sourceTree = "<group>"; };
 		C32F6DA4160591BF004BA8A1 /* EDColorCrayolaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCrayolaTest.h; sourceTree = "<group>"; };
 		C32F6DA5160591BF004BA8A1 /* EDColorCrayolaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCrayolaTest.m; sourceTree = "<group>"; };
+		C32F6DA716064462004BA8A1 /* UIColor+HSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HSB.h"; path = "../EDColor/UIColor+HSB.h"; sourceTree = "<group>"; };
+		C32F6DA816064462004BA8A1 /* UIColor+HSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HSB.m"; path = "../EDColor/UIColor+HSB.m"; sourceTree = "<group>"; };
+		C32F6DAB16064CFE004BA8A1 /* EDColorHSBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHSBTest.h; sourceTree = "<group>"; };
+		C32F6DAC16064CFE004BA8A1 /* EDColorHSBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHSBTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +186,8 @@
 				C32F6DA5160591BF004BA8A1 /* EDColorCrayolaTest.m */,
 				C32F6D9616054473004BA8A1 /* EDColorHexTest.h */,
 				C32F6D9716054473004BA8A1 /* EDColorHexTest.m */,
+				C32F6DAB16064CFE004BA8A1 /* EDColorHSBTest.h */,
+				C32F6DAC16064CFE004BA8A1 /* EDColorHSBTest.m */,
 				C32F6D7A16054090004BA8A1 /* Supporting Files */,
 			);
 			name = Tests;
@@ -203,6 +212,8 @@
 				C32F6DA216056F0F004BA8A1 /* Crayola.h */,
 				C32F6D9A16054E26004BA8A1 /* UIColor+Hex.h */,
 				C32F6D9B16054E26004BA8A1 /* UIColor+Hex.m */,
+				C32F6DA716064462004BA8A1 /* UIColor+HSB.h */,
+				C32F6DA816064462004BA8A1 /* UIColor+HSB.m */,
 			);
 			name = EDColor;
 			sourceTree = "<group>";
@@ -339,6 +350,7 @@
 				C32F6D621605408F004BA8A1 /* EDSecondViewController.m in Sources */,
 				C32F6D9C16054E26004BA8A1 /* UIColor+Hex.m in Sources */,
 				C32F6DA0160569B0004BA8A1 /* UIColor+Crayola.m in Sources */,
+				C32F6DA916064462004BA8A1 /* UIColor+HSB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,8 @@
 				C32F6D9D16054E26004BA8A1 /* UIColor+Hex.m in Sources */,
 				C32F6DA1160569B0004BA8A1 /* UIColor+Crayola.m in Sources */,
 				C32F6DA6160591BF004BA8A1 /* EDColorCrayolaTest.m in Sources */,
+				C32F6DAA16064462004BA8A1 /* UIColor+HSB.m in Sources */,
+				C32F6DAD16064CFE004BA8A1 /* EDColorHSBTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

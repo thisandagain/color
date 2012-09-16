@@ -3,5 +3,9 @@
 
 // Macros
 #define SPLIT_RESULT_TO_RGBA \
-CGFloat red; CGFloat green; CGFloat blue; CGFloat alpha;\
+CGFloat red,green,blue,alpha;\
 [color getRed:&red green:&green blue:&blue alpha:&alpha];
+
+#define SPLIT_RESULT_TO_HSBA \
+CGFloat hue,saturation,brightness,alpha;\
+[color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
