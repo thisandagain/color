@@ -1,4 +1,11 @@
+/** MacOS **/
 .DS_Store
+
+/** NPM **/
+*/node_modules
+*npm*
+
+/** XCode **/
 *.swp
 *~.nib
 
