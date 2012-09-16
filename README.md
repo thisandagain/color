@@ -14,26 +14,32 @@ UIColor *blue    = [UIColor colorWithHex:0x0000FF andAlpha:0.5f];
 UIColor *gray    = [UIColor colorWithHexString:@"0xCCC"];
 ```
 
+![](https://raw.github.com/thisandagain/color/master/Project/example_rgb.png)
+
 ### UIColor+HSB
 ```objective-c
 UIColor *red     = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
-UIColor *blue    = [red offsetWithHue:-0.5f saturation:0.0f brightness:0.0f alpha:0.0f];
-UIColor *beige   = [red offsetWithHue:0.27f saturation:-0.93f brightness:0.0f alpha:0.0f];
+UIColor *blue    = [red offsetWithHue:-0.56f saturation:0.0f brightness:0.0f alpha:0.0f];
 ```
+
+![](https://raw.github.com/thisandagain/color/master/Project/example_hsb.png)
 
 ### UIColor+HSL
 ```objective-c
 UIColor *red     = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
-UIColor *blue    = [red offsetWithHue:-0.5f saturation:0.0f lightness:0.0f alpha:0.0f];
-UIColor *pink    = [red offsetWithHue:0.0f saturation:0.0f lightness:0.9f alpha:0.0f];
+UIColor *pink    = [red offsetWithHue:0.0f saturation:0.0f lightness:0.82f alpha:0.0f];
 ```
 
+![](https://raw.github.com/thisandagain/color/master/Project/example_hsl.png)
+
 ### UIColor+Crayola
+Full list of color names: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
 ```objective-c
 UIColor *mint    = [UIColor colorWithCrayola:@"Magic Mint"];
 UIColor *blue    = [UIColor colorWithCrayola:@"Midnight Blue"];
 UIColor *rorange = [UIColor colorWithCrayola:@"Orange Red"];
 ```
+![](https://raw.github.com/thisandagain/color/master/Project/example_crayola.png)
 
 ---
 
