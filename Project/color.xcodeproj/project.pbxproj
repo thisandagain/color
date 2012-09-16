@@ -497,6 +497,7 @@
 		C32F6D8516054090004BA8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "color/color-Prefix.pch";
 				INFOPLIST_FILE = "color/color-Info.plist";
@@ -508,6 +509,7 @@
 		C32F6D8616054090004BA8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "color/color-Prefix.pch";
 				INFOPLIST_FILE = "color/color-Info.plist";

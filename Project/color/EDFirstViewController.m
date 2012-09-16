@@ -43,13 +43,9 @@
 
 #pragma mark - UI events
 
-- (IBAction)done:(id)sender
-{
-    [self.input resignFirstResponder];
-}
-
 - (IBAction)update:(id)sender
 {
+    [self.input resignFirstResponder];
     self.swatch.backgroundColor = [UIColor colorWithHexString:self.input.text];
 }
 

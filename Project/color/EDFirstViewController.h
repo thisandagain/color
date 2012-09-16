@@ -14,6 +14,5 @@
 @property IBOutlet UIView *swatch;
 
 - (IBAction)update:(id)sender;
-- (IBAction)done:(id)sender;
 
 @end

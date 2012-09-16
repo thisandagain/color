@@ -135,9 +135,7 @@ static void RGB_TO_HSL (CGFloat r, CGFloat g, CGFloat b, CGFloat *outH, CGFloat 
 {    
     CGFloat h,s,l,v,m,vm,r2,g2,b2;
     
-    h = 0;
-    s = 0;
-    l = 0;
+    h = 0; s = 0;
     
     v = MAX(r, g);
     v = MAX(v, b);
