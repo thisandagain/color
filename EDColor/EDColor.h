@@ -7,12 +7,7 @@
 //
 
 #import "UIColor+Hex.h"
-/*
-#import "UIColor+HSL.h"
-#import "UIColor+Gamma.h"
+//#import "UIColor+HSL.h"
+//#import "UIColor+XYZ.h"
 #import "UIColor+Crayola.h"
-#import "UIColor+Pantone.h"
-#import "UIColor+Utility.h"
-    - invert
-    - compliments (1,2,3,4,5,6, etc.) return NSArray
-*/
+//#import "UIColor+Theory.h"
