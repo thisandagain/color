@@ -9,3 +9,7 @@ CGFloat red,green,blue,alpha;\
 #define SPLIT_RESULT_TO_HSBA \
 CGFloat hue,saturation,brightness,alpha;\
 [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+
+#define SPLIT_RESULT_TO_HSLA \
+CGFloat hue,saturation,lightness,alpha;\
+[color getHue:&hue saturation:&saturation lightness:&lightness alpha:&alpha];

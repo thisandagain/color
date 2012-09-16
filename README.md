@@ -21,6 +21,13 @@ UIColor *blue    = [red offsetWithHue:-0.5f saturation:0.0f brightness:0.0f alph
 UIColor *beige   = [red offsetWithHue:0.27f saturation:-0.93f brightness:0.0f alpha:0.0f];
 ```
 
+### UIColor+HSL
+```objective-c
+UIColor *red     = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+UIColor *blue    = [red offsetWithHue:-0.5f saturation:0.0f lightness:0.0f alpha:0.0f];
+UIColor *pink    = [red offsetWithHue:0.0f saturation:0.0f lightness:0.9f alpha:0.0f];
+```
+
 ### UIColor+Crayola
 ```objective-c
 UIColor *mint    = [UIColor colorWithCrayola:@"Magic Mint"];
