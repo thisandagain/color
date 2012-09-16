@@ -16,7 +16,7 @@ UIColor *gray    = [UIColor colorWithHexString:@"0xCCC"];
 
 ### UIColor+HSB
 ```objective-c
-UIColor *red     = [UIColor colorWithHex:0xFF0000);
+UIColor *red     = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
 UIColor *blue    = [red offsetWithHue:-0.5f saturation:0.0f brightness:0.0f alpha:0.0f];
 UIColor *beige   = [red offsetWithHue:0.27f saturation:-0.93f brightness:0.0f alpha:0.0f];
 ```

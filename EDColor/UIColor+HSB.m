@@ -24,7 +24,7 @@
  */
 - (UIColor *)offsetWithHue:(CGFloat)h saturation:(CGFloat)s brightness:(CGFloat)b alpha:(CGFloat)a
 {
-    // Get current
+    // Current values
     CGFloat hue,saturation,brightness,alpha;
     [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
     
