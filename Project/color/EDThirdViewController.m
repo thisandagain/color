@@ -1,33 +1,32 @@
 //
-//  EDFirstViewController.m
+//  EDThirdViewController.m
 //  color
 //
-//  Created by Andrew Sliwinski on 9/15/12.
+//  Created by Andrew Sliwinski on 9/16/12.
 //  Copyright (c) 2012 Andrew Sliwinski. All rights reserved.
 //
 
-#import "EDFirstViewController.h"
+#import "EDThirdViewController.h"
 
-@interface EDFirstViewController ()
+@interface EDThirdViewController ()
 
 @end
 
-@implementation EDFirstViewController
+@implementation EDThirdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Hex";
-        self.tabBarItem.image = [UIImage imageNamed:@"hex"];
+        self.title = @"HSL";
+        self.tabBarItem.image = [UIImage imageNamed:@"hsl"];
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self performSelector:@selector(update:)];
 }
 
@@ -43,21 +42,20 @@
 
 #pragma mark - UI events
 
-- (IBAction)done:(id)sender
-{
-    [self.input resignFirstResponder];
-}
-
 - (IBAction)update:(id)sender
 {
-    self.swatch.backgroundColor = [UIColor colorWithHexString:self.input.text];
+    UIColor *base = [UIColor colorWithRed:0.9f green:0.9f blue:0.01f alpha:0.8f];
+    self.swatch.backgroundColor = [base offsetWithHue:self.hue.value saturation:self.saturation.value lightness:self.lightness.value alpha:self.alpha.value];
 }
 
 #pragma mark - Dealloc
 
 - (void)dealloc
 {
-    _input = nil;
+    _hue = nil;
+    _saturation = nil;
+    _lightness = nil;
+    _alpha = nil;
     _swatch = nil;
 }
 

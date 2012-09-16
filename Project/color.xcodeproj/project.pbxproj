@@ -39,6 +39,10 @@
 		C32F6DB016065448004BA8A1 /* UIColor+HSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DAF16065448004BA8A1 /* UIColor+HSL.m */; };
 		C32F6DB116065448004BA8A1 /* UIColor+HSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DAF16065448004BA8A1 /* UIColor+HSL.m */; };
 		C32F6DB416066591004BA8A1 /* EDColorHSLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DB316066591004BA8A1 /* EDColorHSLTest.m */; };
+		C32F6DB716067102004BA8A1 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C32F6DB516067102004BA8A1 /* background.png */; };
+		C32F6DB816067102004BA8A1 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32F6DB616067102004BA8A1 /* background@2x.png */; };
+		C32F6DBC1606779A004BA8A1 /* EDThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */; };
+		C32F6DBD1606779A004BA8A1 /* EDThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,11 @@
 		C32F6DAF16065448004BA8A1 /* UIColor+HSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HSL.m"; path = "../EDColor/UIColor+HSL.m"; sourceTree = "<group>"; };
 		C32F6DB216066591004BA8A1 /* EDColorHSLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHSLTest.h; sourceTree = "<group>"; };
 		C32F6DB316066591004BA8A1 /* EDColorHSLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHSLTest.m; sourceTree = "<group>"; };
+		C32F6DB516067102004BA8A1 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		C32F6DB616067102004BA8A1 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		C32F6DB91606779A004BA8A1 /* EDThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDThirdViewController.h; sourceTree = "<group>"; };
+		C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDThirdViewController.m; sourceTree = "<group>"; };
+		C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +176,9 @@
 				C32F6D601605408F004BA8A1 /* EDSecondViewController.h */,
 				C32F6D611605408F004BA8A1 /* EDSecondViewController.m */,
 				C32F6D6A16054090004BA8A1 /* EDSecondViewController.xib */,
+				C32F6DB91606779A004BA8A1 /* EDThirdViewController.h */,
+				C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */,
+				C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */,
 				C32F6D8B160540B7004BA8A1 /* Images */,
 				C32F6D4E1605408F004BA8A1 /* Supporting Files */,
 			);
@@ -232,6 +244,8 @@
 		C32F6D8B160540B7004BA8A1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C32F6DB516067102004BA8A1 /* background.png */,
+				C32F6DB616067102004BA8A1 /* background@2x.png */,
 				C32F6D5C1605408F004BA8A1 /* first.png */,
 				C32F6D5E1605408F004BA8A1 /* first@2x.png */,
 				C32F6D631605408F004BA8A1 /* second.png */,
@@ -321,6 +335,9 @@
 				C32F6D6C16054090004BA8A1 /* EDSecondViewController.xib in Resources */,
 				C32F6D94160541C3004BA8A1 /* LICENSE.md in Resources */,
 				C32F6D95160541C3004BA8A1 /* README.md in Resources */,
+				C32F6DB716067102004BA8A1 /* background.png in Resources */,
+				C32F6DB816067102004BA8A1 /* background@2x.png in Resources */,
+				C32F6DBD1606779A004BA8A1 /* EDThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +380,7 @@
 				C32F6DA0160569B0004BA8A1 /* UIColor+Crayola.m in Sources */,
 				C32F6DA916064462004BA8A1 /* UIColor+HSB.m in Sources */,
 				C32F6DB016065448004BA8A1 /* UIColor+HSL.m in Sources */,
+				C32F6DBC1606779A004BA8A1 /* EDThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,4 @@
 #import "UIColor+Hex.h"
 #import "UIColor+HSB.h"
 #import "UIColor+HSL.h"
-//#import "UIColor+XYZ.h"
 #import "UIColor+Crayola.h"
-//#import "UIColor+Theory.h"
