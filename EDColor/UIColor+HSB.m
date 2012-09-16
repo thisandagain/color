@@ -22,19 +22,19 @@
  *
  * @return {UIColor}
  */
-- (UIColor *)offsetWithHue:(CGFloat)h saturation:(CGFloat)s brightness:(CGFloat)b alpha:(CGFloat)a
+- (UIColor *)offsetWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha
 {
     // Current values
-    CGFloat hue,saturation,brightness,alpha;
-    [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+    CGFloat h,s,b,a;
+    [self getHue:&h saturation:&s brightness:&b alpha:&a];
     
     // Calculate offsets
-    h = fmodf(hue + h, 1.0f);
-    s = [self clamp:(saturation + s)];
-    b = [self clamp:(brightness + b)];
-    a = [self clamp:(alpha + a)];
+    hue         = fmodf(hue + h, 1.0f);
+    saturation  = [self clamp:(saturation + s)];
+    brightness  = [self clamp:(brightness + b)];
+    alpha       = [self clamp:(alpha + a)];
     
-    return [UIColor colorWithHue:h saturation:s brightness:b alpha:a];
+    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:alpha];
 }
 
 #pragma mark - Private

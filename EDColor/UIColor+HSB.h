@@ -10,6 +10,6 @@
 
 @interface UIColor (HSB)
 
-- (UIColor *)offsetWithHue:(CGFloat)h saturation:(CGFloat)s brightness:(CGFloat)b alpha:(CGFloat)alpha;
+- (UIColor *)offsetWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha;
 
 @end
