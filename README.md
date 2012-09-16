@@ -11,7 +11,7 @@ This will automatically bring in all of the various categories and classes that 
 ```objective-c
 UIColor *green   = [UIColor colorWithHex:0x00FF00];
 UIColor *blue    = [UIColor colorWithHex:0x0000FF andAlpha:0.5f];
-UIColor *gray    = [UIColor colorWithHexString:@"0xCCC"];
+UIColor *gray    = [UIColor colorWithHexString:@"#CCC"];
 ```
 
 ![](https://raw.github.com/thisandagain/color/master/Project/example_rgb.png)
