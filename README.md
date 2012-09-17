@@ -33,7 +33,7 @@ UIColor *pink    = [red offsetWithHue:0.0f saturation:0.0f lightness:0.82f alpha
 ![](https://raw.github.com/thisandagain/color/master/Project/example_hsl.png)
 
 ### UIColor+Crayola
-Full list of color names: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
+Because crayons are fun! Full list of colors: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
 ```objective-c
 UIColor *mint    = [UIColor colorWithCrayola:@"Magic Mint"];
 UIColor *blue    = [UIColor colorWithCrayola:@"Midnight Blue"];
