@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/thisandagain/color.git", :tag => "v0.0.2" }
   s.platform     = :ios, '5.0'
   s.source_files = 'EDColor'
-  s.frameworks   = 'UIKit', 'SenTestingKit'
+  s.frameworks   = 'UIKit'
   s.requires_arc = true
 end
