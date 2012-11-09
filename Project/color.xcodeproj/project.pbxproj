@@ -43,6 +43,8 @@
 		C32F6DB816067102004BA8A1 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32F6DB616067102004BA8A1 /* background@2x.png */; };
 		C32F6DBC1606779A004BA8A1 /* EDThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */; };
 		C32F6DBD1606779A004BA8A1 /* EDThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */; };
+		C32F6E0916079629004BA8A1 /* EDColor.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32F6E0816079629004BA8A1 /* EDColor.podspec */; };
+		C3BF6FE2164CCCB100E945F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BF6FE1164CCCB100E945F6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		C32F6DB91606779A004BA8A1 /* EDThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDThirdViewController.h; sourceTree = "<group>"; };
 		C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDThirdViewController.m; sourceTree = "<group>"; };
 		C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDThirdViewController.xib; sourceTree = "<group>"; };
+		C32F6E0816079629004BA8A1 /* EDColor.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EDColor.podspec; path = ../EDColor.podspec; sourceTree = "<group>"; };
+		C3BF6FE1164CCCB100E945F6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +139,10 @@
 		C32F6D381605408F004BA8A1 = {
 			isa = PBXGroup;
 			children = (
+				C3BF6FE1164CCCB100E945F6 /* Default-568h@2x.png */,
 				C32F6D92160541C3004BA8A1 /* LICENSE.md */,
 				C32F6D93160541C3004BA8A1 /* README.md */,
+				C32F6E0816079629004BA8A1 /* EDColor.podspec */,
 				C32F6D8A1605409C004BA8A1 /* EDColor */,
 				C32F6D4D1605408F004BA8A1 /* Example */,
 				C32F6D7916054090004BA8A1 /* Tests */,
@@ -338,6 +344,8 @@
 				C32F6DB716067102004BA8A1 /* background.png in Resources */,
 				C32F6DB816067102004BA8A1 /* background@2x.png in Resources */,
 				C32F6DBD1606779A004BA8A1 /* EDThirdViewController.xib in Resources */,
+				C32F6E0916079629004BA8A1 /* EDColor.podspec in Resources */,
+				C3BF6FE2164CCCB100E945F6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

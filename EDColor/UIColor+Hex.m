@@ -49,14 +49,23 @@
  *
  * @return {UIColor}
  */
-+ (UIColor *)colorWithHexString:(NSString *)hexString
++ (UIColor *)colorWithHexString:(id)hexString
 {
     @try {
+        // Nil or non-string
+        if (hexString == nil) @throw [NSException exceptionWithName:@"Nil string" reason:@"Invalid hex string" userInfo:nil];
+        if (![hexString isKindOfClass:[NSString class]]) @throw [NSException exceptionWithName:@"Not a string" reason:@"Invalid hex string" userInfo:nil];
+        
         // Filter
         hexString = [hexString stringByReplacingOccurrencesOfString:@" " withString:@""];
         hexString = [hexString uppercaseString];
         if ([[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]] isEqualToString: @"#"]) {
             hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
+        }
+        
+        // Malformed string handler
+        if ([hexString isEqualToString:@""]) {
+            return [UIColor colorWithWhite:0.0f alpha:1.0f];
         }
         
         // #ffffff
@@ -79,11 +88,11 @@
         float g = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:2]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:3]]];
         float b = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:4]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:5]]];
         float a = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:6]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:7]]];
-        
+    
         return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
     }
     @catch (NSException *exception) {
-        return [UIColor whiteColor];
+        return [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0f];
     }
 }
 

@@ -99,4 +99,28 @@
     STAssertEqualsWithAccuracy(alpha, 0.8f, TEST_ACCURACY, nil);
 }
 
+- (void)testNilString
+{
+    UIColor *color = [UIColor colorWithHexString:nil];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testNotString
+{
+    UIColor *color = [UIColor colorWithHexString:@5];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
 @end

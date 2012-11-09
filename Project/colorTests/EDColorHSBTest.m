@@ -37,6 +37,32 @@
     STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
 }
 
+- (void)testHueOffsetBack180
+{
+    UIColor *base = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color = [base offsetWithHue:-0.5f saturation:0.0f brightness:0.0f alpha:0.0f];
+    
+    SPLIT_RESULT_TO_HSBA
+    
+    STAssertEqualsWithAccuracy(hue, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testHueOffsetBack720
+{
+    UIColor *base = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color = [base offsetWithHue:-2.0f saturation:0.0f brightness:0.0f alpha:0.0f];
+    
+    SPLIT_RESULT_TO_HSBA
+    
+    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
 - (void)testSaturationOffset
 {
     UIColor *base = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];

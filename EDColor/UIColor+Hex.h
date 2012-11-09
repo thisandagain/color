@@ -13,6 +13,6 @@
 + (UIColor *)colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha;
 
 + (UIColor *)colorWithHex:(UInt32)hex;
-+ (UIColor *)colorWithHexString:(NSString *)input;
++ (UIColor *)colorWithHexString:(id)input;
 
 @end
