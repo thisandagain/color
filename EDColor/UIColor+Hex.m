@@ -51,35 +51,40 @@
  */
 + (UIColor *)colorWithHexString:(NSString *)hexString
 {
-    // Filter
-    hexString = [hexString stringByReplacingOccurrencesOfString:@" " withString:@""];
-    hexString = [hexString uppercaseString];
-    if ([[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]] isEqualToString: @"#"]) {
-        hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
+    @try {
+        // Filter
+        hexString = [hexString stringByReplacingOccurrencesOfString:@" " withString:@""];
+        hexString = [hexString uppercaseString];
+        if ([[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]] isEqualToString: @"#"]) {
+            hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
+        }
+        
+        // #ffffff
+        if ([hexString length] == 6) {
+            hexString = [NSString stringWithFormat:@"%@%@", hexString, @"FF"];
+        }
+        
+        // #fff
+        if ([hexString length] == 3) {
+            hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:1], [hexString characterAtIndex:2], [hexString characterAtIndex:2], @"FF"];
+        }
+        
+        // #ff
+        if ([hexString length] == 2) {
+            hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], @"FF"];
+        }
+        
+        NSArray *hex = [[NSArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"A",@"B",@"C",@"D",@"E",@"F",nil];
+        float r = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:1]]];
+        float g = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:2]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:3]]];
+        float b = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:4]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:5]]];
+        float a = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:6]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:7]]];
+        
+        return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
     }
-    
-    // #ffffff
-    if ([hexString length] == 6) {
-        hexString = [NSString stringWithFormat:@"%@%@", hexString, @"FF"];
+    @catch (NSException *exception) {
+        return [UIColor whiteColor];
     }
-    
-    // #fff
-    if ([hexString length] == 3) {
-        hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:1], [hexString characterAtIndex:2], [hexString characterAtIndex:2], @"FF"];
-    }
-    
-    // #ff
-    if ([hexString length] == 2) {
-        hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], @"FF"];
-    }
-    
-    NSArray *hex = [[NSArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"A",@"B",@"C",@"D",@"E",@"F",nil];
-    float r = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:1]]];
-    float g = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:2]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:3]]];
-    float b = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:4]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:5]]];
-    float a = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:6]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:7]]];
-    
-    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
 }
 
 @end
