@@ -63,11 +63,6 @@
             hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
         }
         
-        // Malformed string handler
-        if ([hexString isEqualToString:@""]) {
-            return [UIColor colorWithWhite:0.0f alpha:1.0f];
-        }
-        
         // #ffffff
         if ([hexString length] == 6) {
             hexString = [NSString stringWithFormat:@"%@%@", hexString, @"FF"];
