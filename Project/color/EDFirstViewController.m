@@ -7,7 +7,7 @@
 //
 
 #import "EDFirstViewController.h"
-
+#import "UIColor+Hex.h"
 @interface EDFirstViewController ()
 
 @end
@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    [self performSelector:@selector(update:)];
+    [self performSelector:@selector(update:) withObject:nil];
 }
 
 - (void)viewDidUnload
