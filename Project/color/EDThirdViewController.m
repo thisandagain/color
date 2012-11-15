@@ -7,6 +7,7 @@
 //
 
 #import "EDThirdViewController.h"
+#import "UIColor+HSL.h"
 
 @interface EDThirdViewController ()
 
@@ -27,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self performSelector:@selector(update:)];
+    [self performSelector:@selector(update:) withObject:nil];
 }
 
 - (void)viewDidUnload

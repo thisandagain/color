@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self performSelector:@selector(update:)];
+    [self performSelector:@selector(update:) withObject:nil];
 }
 
 - (void)viewDidUnload
