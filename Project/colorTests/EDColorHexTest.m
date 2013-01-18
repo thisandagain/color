@@ -51,6 +51,31 @@
 
 #pragma mark - String
 
+- (void)testPound
+{
+    UIColor *color = [UIColor colorWithHexString:@"#123456"];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, (0x12/255.0f), TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, (0x34/255.0f), TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, (0x56/255.0f), TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+
+- (void)testStringLen2
+{
+    UIColor *color = [UIColor colorWithHexString:@"80"];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
 - (void)testRedString
 {
     UIColor *color = [UIColor colorWithHexString:@"f00"];
