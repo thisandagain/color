@@ -45,50 +45,54 @@
 /**
  * Creates a new UIColor instance using a hex string input.
  *
- * @param {NSString} Hex string (ie: @"#fff", @"ff0000", or @"ff00ffcc")
+ * @param {NSString} Hex string (ie: @"ff", @"#fff", @"ff0000", or @"ff00ffcc")
  *
  * @return {UIColor}
  */
 + (UIColor *)colorWithHexString:(id)hexString
 {
-    @try {
-        // Nil or non-string
-        if (hexString == nil) @throw [NSException exceptionWithName:@"Nil string" reason:@"Invalid hex string" userInfo:nil];
-        if (![hexString isKindOfClass:[NSString class]]) @throw [NSException exceptionWithName:@"Not a string" reason:@"Invalid hex string" userInfo:nil];
-        
-        // Filter
-        hexString = [hexString stringByReplacingOccurrencesOfString:@" " withString:@""];
-        hexString = [hexString uppercaseString];
-        if ([[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]] isEqualToString: @"#"]) {
-            hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
-        }
-        
-        // #ffffff
-        if ([hexString length] == 6) {
-            hexString = [NSString stringWithFormat:@"%@%@", hexString, @"FF"];
-        }
-        
-        // #fff
-        if ([hexString length] == 3) {
-            hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:1], [hexString characterAtIndex:2], [hexString characterAtIndex:2], @"FF"];
-        }
-        
-        // #ff
-        if ([hexString length] == 2) {
-            hexString = [NSString stringWithFormat:@"%c%c%c%c%c%c%@",[hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], [hexString characterAtIndex:0], [hexString characterAtIndex:1], @"FF"];
-        }
-        
-        NSArray *hex = [[NSArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"A",@"B",@"C",@"D",@"E",@"F",nil];
-        float r = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:0]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:1]]];
-        float g = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:2]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:3]]];
-        float b = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:4]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:5]]];
-        float a = ([hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:6]]]*16)+[hex indexOfObject:[NSString stringWithFormat:@"%c",[hexString characterAtIndex:7]]];
-    
-        return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
-    }
-    @catch (NSException *exception) {
+    if (![hexString isKindOfClass:[NSString class]] || [hexString length] == 0) {
         return [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0f];
     }
+    
+    const char *s = [hexString cStringUsingEncoding:NSASCIIStringEncoding];
+    if (*s == '#') {
+        ++s;
+    }
+    unsigned long long value = strtoll(s, nil, 16);
+    int r, g, b, a;
+    switch (strlen(s)) {
+        case 2:
+            // xx
+            r = g = b = value;
+            a = 255;
+            break;
+        case 3:
+            // RGB
+            r = ((value & 0xf00) >> 8);
+            g = ((value & 0x0f0) >> 4);
+            b = ((value & 0x00f) >> 0);
+            r = r * 16 + r;
+            g = g * 16 + g;
+            b = b * 16 + b;
+            a = 255;
+            break;
+        case 6:
+            // RRGGBB
+            r = (value & 0xff0000) >> 16;
+            g = (value & 0x00ff00) >>  8;
+            b = (value & 0x0000ff) >>  0;
+            a = 255;
+            break;
+        default:
+            // RRGGBBAA
+            r = (value & 0xff000000) >> 24;
+            g = (value & 0x00ff0000) >> 16;
+            b = (value & 0x0000ff00) >>  8;
+            a = (value & 0x000000ff) >>  0;
+            break;
+    }
+    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
 }
 
 @end
