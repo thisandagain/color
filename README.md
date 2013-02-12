@@ -32,6 +32,16 @@ UIColor *pink    = [red offsetWithHue:0.0f saturation:0.0f lightness:0.82f alpha
 
 ![](https://raw.github.com/thisandagain/color/master/Project/example_hsl.png)
 
+### UIColor+CIELAB
+
+```objective-c
+UIColor *red            = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+UIColor *brighterRed    = [red offsetWithLightness:15.0f a:0.0f b:0.0f alpha:0.0f];
+```
+
+![](https://raw.github.com/thisandagain/color/master/Project/example_cielab.png)
+
+
 ### UIColor+Crayola
 Because crayons are fun! Full list of colors: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
 ```objective-c

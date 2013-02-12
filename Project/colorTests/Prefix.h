@@ -13,3 +13,7 @@ CGFloat hue,saturation,brightness,alpha;\
 #define SPLIT_RESULT_TO_HSLA \
 CGFloat hue,saturation,lightness,alpha;\
 [color getHue:&hue saturation:&saturation lightness:&lightness alpha:&alpha];
+
+#define SPLIT_RESULT_TO_LAB \
+CGFloat lightness,a,b,alpha;\
+[color getLightness:&lightness A:&a B:&b alpha:&alpha];
