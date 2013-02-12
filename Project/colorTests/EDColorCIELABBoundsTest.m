@@ -6,13 +6,8 @@
 //  Copyright (c) 2012 Matthew Smith. All rights reserved.
 //
 
-#import "EDColorCIELABTest.h"
+#import "EDColorCIELABBoundsTest.h"
 #import "UIColor+CIELAB.h"
-
-#define TEST_ACCURACY_XYZ TEST_ACCURACY*100  //XYZ on scale of 0 to 100
-#define TEST_ACCURACY_L TEST_ACCURACY*100  //L multiplied scale of 0 to 100
-#define TEST_ACCURACY_A TEST_ACCURACY*200  //a multiplied scale of 0 to 200
-#define TEST_ACCURACY_B TEST_ACCURACY*500  //b multiplied scale of 0 to 500
 
 @implementation EDColorCIELABBoundsTest
 
