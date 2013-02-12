@@ -14,7 +14,7 @@
 #define TEST_ACCURACY_A TEST_ACCURACY*200  //a multiplied scale of 0 to 200
 #define TEST_ACCURACY_B TEST_ACCURACY*500  //b multiplied scale of 0 to 500
 
-@implementation EDColorCIELABTest
+@implementation EDColorCIELABBoundsTest
 
 /* While L has a range of 0 to 100, A and B's range depends on the color gamut of the device and whitepoint in use.
  

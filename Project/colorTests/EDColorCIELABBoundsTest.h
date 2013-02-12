@@ -9,6 +9,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "Prefix.h"
 
-@interface EDColorCIELABTest : SenTestCase
+@interface EDColorCIELABBoundsTest : SenTestCase
 
 @end
