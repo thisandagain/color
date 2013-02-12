@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453A82E316CAF34700244785 /* EDColorCIELABBoundsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A82E216CAF34700244785 /* EDColorCIELABBoundsTest.m */; };
+		4560529416CA76B000AE6C06 /* EDColorCIELABTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560529316CA76B000AE6C06 /* EDColorCIELABTest.m */; };
+		4560529516CA78A600AE6C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F6D4B1605408F004BA8A1 /* CoreGraphics.framework */; };
+		4560529B16CABFF700AE6C06 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560529A16CABFF700AE6C06 /* UIColor+CIELAB.m */; };
+		4560529C16CABFF700AE6C06 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560529A16CABFF700AE6C06 /* UIColor+CIELAB.m */; };
+		45CDC89316C9A6D800F809B8 /* EDFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CDC89216C9A6D700F809B8 /* EDFourthViewController.m */; };
+		45CDC89416C9A6D800F809B8 /* EDFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CDC89216C9A6D700F809B8 /* EDFourthViewController.m */; };
+		45CDC89616C9A72300F809B8 /* EDFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45CDC89516C9A72300F809B8 /* EDFourthViewController.xib */; };
+		45CDC89716C9A72300F809B8 /* EDFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45CDC89516C9A72300F809B8 /* EDFourthViewController.xib */; };
 		C32F6D481605408F004BA8A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F6D471605408F004BA8A1 /* UIKit.framework */; };
 		C32F6D4A1605408F004BA8A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F6D491605408F004BA8A1 /* Foundation.framework */; };
 		C32F6D4C1605408F004BA8A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F6D4B1605408F004BA8A1 /* CoreGraphics.framework */; };
@@ -58,6 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		453A82E216CAF34700244785 /* EDColorCIELABBoundsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCIELABBoundsTest.m; sourceTree = "<group>"; };
+		453A82E416CAF34F00244785 /* EDColorCIELABBoundsTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABBoundsTest.h; sourceTree = "<group>"; };
+		4560529216CA76A200AE6C06 /* EDColorCIELABTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABTest.h; sourceTree = "<group>"; };
+		4560529316CA76B000AE6C06 /* EDColorCIELABTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCIELABTest.m; sourceTree = "<group>"; };
+		4560529916CABFF700AE6C06 /* UIColor+CIELAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "../EDColor/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		4560529A16CABFF700AE6C06 /* UIColor+CIELAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "../EDColor/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		45CDC89116C9A6D700F809B8 /* EDFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDFourthViewController.h; sourceTree = "<group>"; };
+		45CDC89216C9A6D700F809B8 /* EDFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDFourthViewController.m; sourceTree = "<group>"; };
+		45CDC89516C9A72300F809B8 /* EDFourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDFourthViewController.xib; sourceTree = "<group>"; };
 		C32F6D431605408F004BA8A1 /* color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32F6D471605408F004BA8A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C32F6D491605408F004BA8A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4560529516CA78A600AE6C06 /* CoreGraphics.framework in Frameworks */,
 				C32F6D7416054090004BA8A1 /* SenTestingKit.framework in Frameworks */,
 				C32F6D7516054090004BA8A1 /* UIKit.framework in Frameworks */,
 				C32F6D7616054090004BA8A1 /* Foundation.framework in Frameworks */,
@@ -185,6 +204,9 @@
 				C32F6DB91606779A004BA8A1 /* EDThirdViewController.h */,
 				C32F6DBA1606779A004BA8A1 /* EDThirdViewController.m */,
 				C32F6DBB1606779A004BA8A1 /* EDThirdViewController.xib */,
+				45CDC89116C9A6D700F809B8 /* EDFourthViewController.h */,
+				45CDC89216C9A6D700F809B8 /* EDFourthViewController.m */,
+				45CDC89516C9A72300F809B8 /* EDFourthViewController.xib */,
 				C32F6D8B160540B7004BA8A1 /* Images */,
 				C32F6D4E1605408F004BA8A1 /* Supporting Files */,
 			);
@@ -215,6 +237,10 @@
 				C32F6DAC16064CFE004BA8A1 /* EDColorHSBTest.m */,
 				C32F6DB216066591004BA8A1 /* EDColorHSLTest.h */,
 				C32F6DB316066591004BA8A1 /* EDColorHSLTest.m */,
+				4560529216CA76A200AE6C06 /* EDColorCIELABTest.h */,
+				4560529316CA76B000AE6C06 /* EDColorCIELABTest.m */,
+				453A82E416CAF34F00244785 /* EDColorCIELABBoundsTest.h */,
+				453A82E216CAF34700244785 /* EDColorCIELABBoundsTest.m */,
 				C32F6D7A16054090004BA8A1 /* Supporting Files */,
 			);
 			name = Tests;
@@ -243,6 +269,8 @@
 				C32F6DA816064462004BA8A1 /* UIColor+HSB.m */,
 				C32F6DAE16065448004BA8A1 /* UIColor+HSL.h */,
 				C32F6DAF16065448004BA8A1 /* UIColor+HSL.m */,
+				4560529916CABFF700AE6C06 /* UIColor+CIELAB.h */,
+				4560529A16CABFF700AE6C06 /* UIColor+CIELAB.m */,
 			);
 			name = EDColor;
 			sourceTree = "<group>";
@@ -346,6 +374,7 @@
 				C32F6DBD1606779A004BA8A1 /* EDThirdViewController.xib in Resources */,
 				C32F6E0916079629004BA8A1 /* EDColor.podspec in Resources */,
 				C3BF6FE2164CCCB100E945F6 /* Default-568h@2x.png in Resources */,
+				45CDC89616C9A72300F809B8 /* EDFourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32F6D7E16054090004BA8A1 /* InfoPlist.strings in Resources */,
+				45CDC89716C9A72300F809B8 /* EDFourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +419,8 @@
 				C32F6DA916064462004BA8A1 /* UIColor+HSB.m in Sources */,
 				C32F6DB016065448004BA8A1 /* UIColor+HSL.m in Sources */,
 				C32F6DBC1606779A004BA8A1 /* EDThirdViewController.m in Sources */,
+				45CDC89316C9A6D800F809B8 /* EDFourthViewController.m in Sources */,
+				4560529B16CABFF700AE6C06 /* UIColor+CIELAB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +436,10 @@
 				C32F6DAD16064CFE004BA8A1 /* EDColorHSBTest.m in Sources */,
 				C32F6DB116065448004BA8A1 /* UIColor+HSL.m in Sources */,
 				C32F6DB416066591004BA8A1 /* EDColorHSLTest.m in Sources */,
+				45CDC89416C9A6D800F809B8 /* EDFourthViewController.m in Sources */,
+				4560529416CA76B000AE6C06 /* EDColorCIELABTest.m in Sources */,
+				4560529C16CABFF700AE6C06 /* UIColor+CIELAB.m in Sources */,
+				453A82E316CAF34700244785 /* EDColorCIELABBoundsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
