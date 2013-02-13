@@ -10,3 +10,4 @@
 #import "UIColor+HSB.h"
 #import "UIColor+HSL.h"
 #import "UIColor+Crayola.h"
+#import "UIColor+CIELAB.h"
