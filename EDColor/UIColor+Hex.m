@@ -95,4 +95,20 @@
     return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/255.0f];
 }
 
+/**
+ * Returns the hex value of the receiver. Alpha value is not included.
+ *
+ * @return {UInt32}
+ */
+- (UInt32)hexValue {
+    CGFloat r,g,b,a;
+    [self getRed:&r green:&g blue:&b alpha:&a];
+    
+    UInt32 ri = r*255.0;
+    UInt32 gi = g*255.0;
+    UInt32 bi = b*255.0;
+    
+    return (ri<<16) + (gi<<8) + bi;
+}
+
 @end
