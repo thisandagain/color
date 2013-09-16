@@ -49,6 +49,18 @@
     STAssertEqualsWithAccuracy(alpha, 0.8f, TEST_ACCURACY, nil);
 }
 
+- (void)testHexValue
+{
+    UInt32 values[3] = {0xFFFFFF, 0x000000, 0x123456};
+    for (int i=0; i<3; i++) {
+        UInt32 original = values[i];
+        UIColor *color = [UIColor colorWithHex:original];
+        UInt32 retrieved = [color hexValue];
+        
+        STAssertEqualsWithAccuracy(original, retrieved, TEST_ACCURACY, nil);
+    }
+}
+
 #pragma mark - String
 
 - (void)testPound
