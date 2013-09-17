@@ -49,18 +49,6 @@
     STAssertEqualsWithAccuracy(alpha, 0.8f, TEST_ACCURACY, nil);
 }
 
-- (void)testHexValue
-{
-    UInt32 values[3] = {0xFFFFFF, 0x000000, 0x123456};
-    for (int i=0; i<3; i++) {
-        UInt32 original = values[i];
-        UIColor *color = [UIColor colorWithHex:original];
-        UInt32 retrieved = [color hexValue];
-        
-        STAssertEqualsWithAccuracy(original, retrieved, TEST_ACCURACY, nil);
-    }
-}
-
 #pragma mark - String
 
 - (void)testPound
@@ -158,6 +146,40 @@
     STAssertEqualsWithAccuracy(green, 0.0f, TEST_ACCURACY, nil);
     STAssertEqualsWithAccuracy(blue, 0.0f, TEST_ACCURACY, nil);
     STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+#pragma mark - Getter
+
+- (void)testHexValueRed
+{
+    UIColor *color = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
+    UInt32 hex = [color hexValue];
+    
+    STAssertEqualsWithAccuracy(hex, (UInt32) 0xff0000, TEST_ACCURACY, nil);
+}
+
+- (void)testHexValueGreen
+{
+    UIColor *color = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0];
+    UInt32 hex = [color hexValue];
+    
+    STAssertEqualsWithAccuracy(hex, (UInt32) 0x00ff00, TEST_ACCURACY, nil);
+}
+
+- (void)testHexValueBlue
+{
+    UIColor *color = [UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0];
+    UInt32 hex = [color hexValue];
+    
+    STAssertEqualsWithAccuracy(hex, (UInt32) 0x0000ff, TEST_ACCURACY, nil);
+}
+
+- (void)testHexValueGray
+{
+    UIColor *color = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1.0];
+    UInt32 hex = [color hexValue];
+    
+    STAssertEqualsWithAccuracy(hex, (UInt32) 0x666666, TEST_ACCURACY, nil);
 }
 
 @end
