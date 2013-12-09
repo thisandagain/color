@@ -64,7 +64,7 @@
     switch (strlen(s)) {
         case 2:
             // xx
-            r = g = b = value;
+            r = g = b = (int)value;
             a = 255;
             break;
         case 3:
