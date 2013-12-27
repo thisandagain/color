@@ -1,7 +1,7 @@
 ## Color
 
 ### Getting Started
-The quickest way to get started with `EDColor` is to add the `EDColor` directory to your project and...
+The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org), but otherwise you can add the `EDColor` directory to your project and...
 ```objective-c
 #import "EDColor.h"
 ```
