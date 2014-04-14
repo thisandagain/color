@@ -1,5 +1,7 @@
 ## Color
 
+[![Build Status](https://travis-ci.org/thisandagain/color.svg)](https://travis-ci.org/thisandagain/color)
+
 ### Getting Started
 The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org), but otherwise you can add the `EDColor` directory to your project and...
 ```objective-c
