@@ -1,0 +1,24 @@
+//
+//  Tests-Prefix.pch
+//  EDColor
+//
+//  Created by Daniel Doubrovkine on 4/14/14.
+//  Copyright (c) 2012 Andrew Sliwinski. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <SenTestingKit/SenTestingKit.h>
+
+#import "Macros.h"
+
+#endif
