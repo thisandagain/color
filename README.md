@@ -55,6 +55,9 @@ UIColor *rorange = [UIColor colorWithCrayola:@"Orange Red"];
 
 ---
 
+### Contributing
+Install CocoaPods with `gem install cocoapods`. Run `pod install`. Open EDColor.xcworkspace.
+
 ### Testing
 The test suite for `EDColor` is built using OCUnit. To run the test suite, simply open the project in XCode and choose "test" from the Product menu. Please run and augment the tests prior to submitting a pull request.
 
