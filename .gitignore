@@ -17,3 +17,6 @@ build/
 *.mode2v3
 
 xcuserdata
+
+Pods
+
