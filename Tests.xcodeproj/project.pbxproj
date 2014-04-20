@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C12144818FC678B003CDC74 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C12144718FC678B003CDC74 /* SenTestingKit.framework */; };
+		3CE9EC3318FC65650034ADA7 /* EDColorCIELABBoundsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */; };
+		3CE9EC3418FC65650034ADA7 /* EDColorCIELABTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2A18FC65650034ADA7 /* EDColorCIELABTest.m */; };
+		3CE9EC3518FC65650034ADA7 /* EDColorCrayolaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2C18FC65650034ADA7 /* EDColorCrayolaTest.m */; };
+		3CE9EC3618FC65650034ADA7 /* EDColorHexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2E18FC65650034ADA7 /* EDColorHexTest.m */; };
+		3CE9EC3718FC65650034ADA7 /* EDColorHSBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC3018FC65650034ADA7 /* EDColorHSBTest.m */; };
+		3CE9EC3818FC65650034ADA7 /* EDColorHSLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC3218FC65650034ADA7 /* EDColorHSLTest.m */; };
+		3CFB65CA18E200F600E00693 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CFB65C818E200F600E00693 /* InfoPlist.strings */; };
+		F58206F23C3643CB8E8E602F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917ADED41E84FE1A1C6D6C5 /* libPods-Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C12144718FC678B003CDC74 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CE9EC2718FC65650034ADA7 /* EDColorCIELABBoundsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABBoundsTest.h; sourceTree = "<group>"; };
+		3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCIELABBoundsTest.m; sourceTree = "<group>"; };
+		3CE9EC2918FC65650034ADA7 /* EDColorCIELABTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABTest.h; sourceTree = "<group>"; };
+		3CE9EC2A18FC65650034ADA7 /* EDColorCIELABTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCIELABTest.m; sourceTree = "<group>"; };
+		3CE9EC2B18FC65650034ADA7 /* EDColorCrayolaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCrayolaTest.h; sourceTree = "<group>"; };
+		3CE9EC2C18FC65650034ADA7 /* EDColorCrayolaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCrayolaTest.m; sourceTree = "<group>"; };
+		3CE9EC2D18FC65650034ADA7 /* EDColorHexTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHexTest.h; sourceTree = "<group>"; };
+		3CE9EC2E18FC65650034ADA7 /* EDColorHexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHexTest.m; sourceTree = "<group>"; };
+		3CE9EC2F18FC65650034ADA7 /* EDColorHSBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHSBTest.h; sourceTree = "<group>"; };
+		3CE9EC3018FC65650034ADA7 /* EDColorHSBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHSBTest.m; sourceTree = "<group>"; };
+		3CE9EC3118FC65650034ADA7 /* EDColorHSLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHSLTest.h; sourceTree = "<group>"; };
+		3CE9EC3218FC65650034ADA7 /* EDColorHSLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHSLTest.m; sourceTree = "<group>"; };
+		3CE9EC3918FC65860034ADA7 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		3CFB65BC18E200F600E00693 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.octest; path = "/Users/dblock/source/color/dblock/build/Debug-iphoneos/Tests.octest"; sourceTree = "<absolute>"; };
+		3CFB65C718E200F600E00693 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		3CFB65C918E200F600E00693 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CFB65CD18E200F600E00693 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		5917ADED41E84FE1A1C6D6C5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		A64D71883054425489005487 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CFB65B918E200F600E00693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C12144818FC678B003CDC74 /* SenTestingKit.framework in Frameworks */,
+				F58206F23C3643CB8E8E602F /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CFB65B118E200BF00E00693 = {
+			isa = PBXGroup;
+			children = (
+				3CFB65C518E200F600E00693 /* Tests */,
+				3CFB65BE18E200F600E00693 /* Frameworks */,
+				A64D71883054425489005487 /* Pods.xcconfig */,
+				937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3CFB65BE18E200F600E00693 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C12144718FC678B003CDC74 /* SenTestingKit.framework */,
+				5917ADED41E84FE1A1C6D6C5 /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CFB65C518E200F600E00693 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CE9EC2718FC65650034ADA7 /* EDColorCIELABBoundsTest.h */,
+				3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */,
+				3CE9EC2918FC65650034ADA7 /* EDColorCIELABTest.h */,
+				3CE9EC2A18FC65650034ADA7 /* EDColorCIELABTest.m */,
+				3CE9EC2B18FC65650034ADA7 /* EDColorCrayolaTest.h */,
+				3CE9EC2C18FC65650034ADA7 /* EDColorCrayolaTest.m */,
+				3CE9EC2D18FC65650034ADA7 /* EDColorHexTest.h */,
+				3CE9EC2E18FC65650034ADA7 /* EDColorHexTest.m */,
+				3CE9EC2F18FC65650034ADA7 /* EDColorHSBTest.h */,
+				3CE9EC3018FC65650034ADA7 /* EDColorHSBTest.m */,
+				3CE9EC3118FC65650034ADA7 /* EDColorHSLTest.h */,
+				3CE9EC3218FC65650034ADA7 /* EDColorHSLTest.m */,
+				3CFB65C618E200F600E00693 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3CFB65C618E200F600E00693 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CE9EC3918FC65860034ADA7 /* Macros.h */,
+				3CFB65C718E200F600E00693 /* Tests-Info.plist */,
+				3CFB65C818E200F600E00693 /* InfoPlist.strings */,
+				3CFB65CD18E200F600E00693 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CFB65BB18E200F600E00693 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CFB65D018E200F600E00693 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				C1D885F908AE40B7A6AD0663 /* Check Pods Manifest.lock */,
+				3CFB65B818E200F600E00693 /* Sources */,
+				3CFB65B918E200F600E00693 /* Frameworks */,
+				3CFB65BA18E200F600E00693 /* Resources */,
+				9BFD8D2081C24A94862EBA1E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 3CFB65BC18E200F600E00693 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CFB65B218E200BF00E00693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 3CFB65B518E200BF00E00693 /* Build configuration list for PBXProject "Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CFB65B118E200BF00E00693;
+			productRefGroup = 3CFB65B118E200BF00E00693;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CFB65BB18E200F600E00693 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CFB65BA18E200F600E00693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFB65CA18E200F600E00693 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BFD8D2081C24A94862EBA1E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D885F908AE40B7A6AD0663 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CFB65B818E200F600E00693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE9EC3618FC65650034ADA7 /* EDColorHexTest.m in Sources */,
+				3CE9EC3418FC65650034ADA7 /* EDColorCIELABTest.m in Sources */,
+				3CE9EC3318FC65650034ADA7 /* EDColorCIELABBoundsTest.m in Sources */,
+				3CE9EC3718FC65650034ADA7 /* EDColorHSBTest.m in Sources */,
+				3CE9EC3818FC65650034ADA7 /* EDColorHSLTest.m in Sources */,
+				3CE9EC3518FC65650034ADA7 /* EDColorCrayolaTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CFB65C818E200F600E00693 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CFB65C918E200F600E00693 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CFB65B618E200BF00E00693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		3CFB65B718E200BF00E00693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3CFB65CE18E200F600E00693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)/ReferenceImages\\\"\"",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3CFB65CF18E200F600E00693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CFB65B518E200BF00E00693 /* Build configuration list for PBXProject "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFB65B618E200BF00E00693 /* Debug */,
+				3CFB65B718E200BF00E00693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CFB65D018E200F600E00693 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFB65CE18E200F600E00693 /* Debug */,
+				3CFB65CF18E200F600E00693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CFB65B218E200BF00E00693 /* Project object */;
+}

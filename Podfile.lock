@@ -1,0 +1,14 @@
+PODS:
+  - EDColor (0.2.1)
+
+DEPENDENCIES:
+  - EDColor (from `EDColor.podspec`)
+
+EXTERNAL SOURCES:
+  EDColor:
+    :path: EDColor.podspec
+
+SPEC CHECKSUMS:
+  EDColor: 171165899bf801305f2d3d3eb0d3533bf0266dc4
+
+COCOAPODS: 0.31.1

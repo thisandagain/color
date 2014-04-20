@@ -1,5 +1,7 @@
 ## Color
 
+[![Build Status](https://travis-ci.org/thisandagain/color.svg)](https://travis-ci.org/thisandagain/color)
+
 ### Getting Started
 The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org), but otherwise you can add the `EDColor` directory to your project and...
 ```objective-c
@@ -52,6 +54,9 @@ UIColor *rorange = [UIColor colorWithCrayola:@"Orange Red"];
 ![](https://raw.github.com/thisandagain/color/master/Project/example_crayola.png)
 
 ---
+
+### Contributing
+Install CocoaPods with `gem install cocoapods`. Run `pod install`. Open EDColor.xcworkspace.
 
 ### Testing
 The test suite for `EDColor` is built using OCUnit. To run the test suite, simply open the project in XCode and choose "test" from the Product menu. Please run and augment the tests prior to submitting a pull request.
