@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C12144818FC678B003CDC74 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C12144718FC678B003CDC74 /* SenTestingKit.framework */; };
+		3C205AD519083BE100B3C2B4 /* EDColoriOS7Test.h in Sources */ = {isa = PBXBuildFile; fileRef = 3C205AD419083BE100B3C2B4 /* EDColoriOS7Test.h */; };
+		3C205ADA19083C8100B3C2B4 /* EDColoriOS7Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C205AD919083C8100B3C2B4 /* EDColoriOS7Test.m */; };
 		3CE9EC3318FC65650034ADA7 /* EDColorCIELABBoundsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */; };
 		3CE9EC3418FC65650034ADA7 /* EDColorCIELABTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2A18FC65650034ADA7 /* EDColorCIELABTest.m */; };
 		3CE9EC3518FC65650034ADA7 /* EDColorCrayolaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2C18FC65650034ADA7 /* EDColorCrayolaTest.m */; };
@@ -20,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		3C12144718FC678B003CDC74 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C205AD419083BE100B3C2B4 /* EDColoriOS7Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColoriOS7Test.h; sourceTree = "<group>"; };
+		3C205AD919083C8100B3C2B4 /* EDColoriOS7Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColoriOS7Test.m; sourceTree = "<group>"; };
+		3C205ADE19083DAA00B3C2B4 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE9EC2718FC65650034ADA7 /* EDColorCIELABBoundsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABBoundsTest.h; sourceTree = "<group>"; };
 		3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorCIELABBoundsTest.m; sourceTree = "<group>"; };
 		3CE9EC2918FC65650034ADA7 /* EDColorCIELABTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorCIELABTest.h; sourceTree = "<group>"; };
@@ -33,13 +38,11 @@
 		3CE9EC3118FC65650034ADA7 /* EDColorHSLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColorHSLTest.h; sourceTree = "<group>"; };
 		3CE9EC3218FC65650034ADA7 /* EDColorHSLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColorHSLTest.m; sourceTree = "<group>"; };
 		3CE9EC3918FC65860034ADA7 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		3CFB65BC18E200F600E00693 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.octest; path = "/Users/dblock/source/color/dblock/build/Debug-iphoneos/Tests.octest"; sourceTree = "<absolute>"; };
 		3CFB65C718E200F600E00693 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		3CFB65C918E200F600E00693 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3CFB65CD18E200F600E00693 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		5917ADED41E84FE1A1C6D6C5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
-		A64D71883054425489005487 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,8 @@
 			children = (
 				3CFB65C518E200F600E00693 /* Tests */,
 				3CFB65BE18E200F600E00693 /* Frameworks */,
-				A64D71883054425489005487 /* Pods.xcconfig */,
 				937E2C394A8B4F15B1455C01 /* Pods-Tests.xcconfig */,
+				3C205ADE19083DAA00B3C2B4 /* Tests.octest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +80,7 @@
 		3CFB65C518E200F600E00693 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3C205AD919083C8100B3C2B4 /* EDColoriOS7Test.m */,
 				3CE9EC2718FC65650034ADA7 /* EDColorCIELABBoundsTest.h */,
 				3CE9EC2818FC65650034ADA7 /* EDColorCIELABBoundsTest.m */,
 				3CE9EC2918FC65650034ADA7 /* EDColorCIELABTest.h */,
@@ -90,6 +94,7 @@
 				3CE9EC3118FC65650034ADA7 /* EDColorHSLTest.h */,
 				3CE9EC3218FC65650034ADA7 /* EDColorHSLTest.m */,
 				3CFB65C618E200F600E00693 /* Supporting Files */,
+				3C205AD419083BE100B3C2B4 /* EDColoriOS7Test.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -124,7 +129,7 @@
 			);
 			name = Tests;
 			productName = Tests;
-			productReference = 3CFB65BC18E200F600E00693 /* Tests.octest */;
+			productReference = 3C205ADE19083DAA00B3C2B4 /* Tests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -203,9 +208,11 @@
 			files = (
 				3CE9EC3618FC65650034ADA7 /* EDColorHexTest.m in Sources */,
 				3CE9EC3418FC65650034ADA7 /* EDColorCIELABTest.m in Sources */,
+				3C205AD519083BE100B3C2B4 /* EDColoriOS7Test.h in Sources */,
 				3CE9EC3318FC65650034ADA7 /* EDColorCIELABBoundsTest.m in Sources */,
 				3CE9EC3718FC65650034ADA7 /* EDColorHSBTest.m in Sources */,
 				3CE9EC3818FC65650034ADA7 /* EDColorHSLTest.m in Sources */,
+				3C205ADA19083C8100B3C2B4 /* EDColoriOS7Test.m in Sources */,
 				3CE9EC3518FC65650034ADA7 /* EDColorCrayolaTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@
 #import "EDSecondViewController.h"
 #import "EDThirdViewController.h"
 #import "EDFourthViewController.h"
+#import "EDColoriOS7ViewController.h"
 
 @implementation EDAppDelegate
 
@@ -23,8 +24,9 @@
     UIViewController *viewController2 = [[EDSecondViewController alloc] initWithNibName:@"EDSecondViewController" bundle:nil];
     UIViewController *viewController3 = [[EDThirdViewController alloc] initWithNibName:@"EDThirdViewController" bundle:nil];
     UIViewController *viewController4 = [[EDFourthViewController alloc] initWithNibName:@"EDFourthViewController" bundle:nil];
+    UIViewController *viewControlleriOS7Colors = [[EDColoriOS7ViewController alloc] initWithNibName:@"EDColoriOS7ViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4, viewControlleriOS7Colors];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

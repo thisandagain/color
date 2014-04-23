@@ -53,6 +53,18 @@ UIColor *rorange = [UIColor colorWithCrayola:@"Orange Red"];
 ```
 ![](https://raw.github.com/thisandagain/color/master/Demo/Images/example_crayola.png)
 
+
+### UIColor+iOS7
+Some of the iOS7 colors from [ios7colors.com](http://ios7colors.com/).
+```objective-c
+UIColor *yellow    = [UIColor iOS7yellowColor];
+
+UIColor *greenGradientStart = [UIColor iOS7greenGradientStartColor];
+UIColor *greenGradientEnd = [UIColor iOS7greenGradientEndColor];
+```
+![](Demo/Images/example_ios7.png)
+
+
 ---
 
 ### Contributing

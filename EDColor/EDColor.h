@@ -11,3 +11,4 @@
 #import "UIColor+HSL.h"
 #import "UIColor+Crayola.h"
 #import "UIColor+CIELAB.h"
+#import "UIColor+iOS7.h"
