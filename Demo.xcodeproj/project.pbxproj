@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		273E9EE865984F44A8AF2A9D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2957D8BD1FB4630AD6F922F /* libPods.a */; };
+		0D0852F651BA48A6A2690509 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E57629B1A00D4050BE057987 /* libPods-Demo.a */; };
+		3C205ADD19083CC600B3C2B4 /* EDColoriOS7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C205ADC19083CC600B3C2B4 /* EDColoriOS7ViewController.m */; };
+		3C205AE019083E5F00B3C2B4 /* EDColoriOS7ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C205ADF19083E5F00B3C2B4 /* EDColoriOS7ViewController.xib */; };
+		3C205AE41908448B00B3C2B4 /* EDColoriOS7ViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C205AE31908448B00B3C2B4 /* EDColoriOS7ViewCell.xib */; };
 		3C562C6618DC8B4500DE3F38 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3C562C6518DC8B4500DE3F38 /* Images */; };
 		3CB0E6D718C8B9E2009CE8DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB0E6D618C8B9E2009CE8DB /* Foundation.framework */; };
 		3CB0E6D918C8B9E2009CE8DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB0E6D818C8B9E2009CE8DB /* CoreGraphics.framework */; };
@@ -24,10 +27,13 @@
 		3CE9EC0D18FC602D0034ADA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9EC0C18FC602D0034ADA7 /* main.m */; };
 		3CE9EC2318FC64850034ADA7 /* EDFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2218FC64850034ADA7 /* EDFirstViewController.xib */; };
 		3CE9EC2518FC648D0034ADA7 /* EDSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE9EC2418FC648D0034ADA7 /* EDSecondViewController.xib */; };
-		F4AB3EC2A2444AD19798863E /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66239C348A64C5382E2FEFE /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C205ADB19083CC600B3C2B4 /* EDColoriOS7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColoriOS7ViewController.h; sourceTree = "<group>"; };
+		3C205ADC19083CC600B3C2B4 /* EDColoriOS7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDColoriOS7ViewController.m; sourceTree = "<group>"; };
+		3C205ADF19083E5F00B3C2B4 /* EDColoriOS7ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDColoriOS7ViewController.xib; sourceTree = "<group>"; };
+		3C205AE31908448B00B3C2B4 /* EDColoriOS7ViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDColoriOS7ViewCell.xib; sourceTree = "<group>"; };
 		3C562C6518DC8B4500DE3F38 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		3CB0E6D318C8B9E2009CE8DB /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB0E6D618C8B9E2009CE8DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,11 +59,7 @@
 		3CE9EC0C18FC602D0034ADA7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3CE9EC2218FC64850034ADA7 /* EDFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDFirstViewController.xib; sourceTree = "<group>"; };
 		3CE9EC2418FC648D0034ADA7 /* EDSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDSecondViewController.xib; sourceTree = "<group>"; };
-		98DB4ADA533041DD9D9E7647 /* libPods-IntegrationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntegrationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B407DD3D5B084B98A0022A4D /* libPods-IntegrationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntegrationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD0E280B71AE47E499695C40 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		C66239C348A64C5382E2FEFE /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2957D8BD1FB4630AD6F922F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57629B1A00D4050BE057987 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4DCA04C7CC4E32A9AEA10B /* Pods-Demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.xcconfig"; path = "Pods/Pods-Demo.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +71,7 @@
 				3CB0E6D918C8B9E2009CE8DB /* CoreGraphics.framework in Frameworks */,
 				3CB0E6DB18C8B9E2009CE8DB /* UIKit.framework in Frameworks */,
 				3CB0E6D718C8B9E2009CE8DB /* Foundation.framework in Frameworks */,
-				273E9EE865984F44A8AF2A9D /* libPods.a in Frameworks */,
-				F4AB3EC2A2444AD19798863E /* libPods-Demo.a in Frameworks */,
+				0D0852F651BA48A6A2690509 /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +84,6 @@
 				3CB0E6DC18C8B9E2009CE8DB /* Demo */,
 				3CB0E6D518C8B9E2009CE8DB /* Frameworks */,
 				3CB0E6D418C8B9E2009CE8DB /* Products */,
-				BD0E280B71AE47E499695C40 /* Pods.xcconfig */,
 				FE4DCA04C7CC4E32A9AEA10B /* Pods-Demo.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -103,10 +103,7 @@
 				3CB0E6D818C8B9E2009CE8DB /* CoreGraphics.framework */,
 				3CB0E6DA18C8B9E2009CE8DB /* UIKit.framework */,
 				3CB0E6F518C8B9E2009CE8DB /* XCTest.framework */,
-				D2957D8BD1FB4630AD6F922F /* libPods.a */,
-				98DB4ADA533041DD9D9E7647 /* libPods-IntegrationTests.a */,
-				C66239C348A64C5382E2FEFE /* libPods-Demo.a */,
-				B407DD3D5B084B98A0022A4D /* libPods-IntegrationTests.a */,
+				E57629B1A00D4050BE057987 /* libPods-Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +111,7 @@
 		3CB0E6DC18C8B9E2009CE8DB /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3C205AE31908448B00B3C2B4 /* EDColoriOS7ViewCell.xib */,
 				3CE9EC2418FC648D0034ADA7 /* EDSecondViewController.xib */,
 				3CE9EC2218FC64850034ADA7 /* EDFirstViewController.xib */,
 				3CE9EC0C18FC602D0034ADA7 /* main.m */,
@@ -132,6 +130,9 @@
 				3CB0E70E18C8BB08009CE8DB /* EDAppDelegate.m */,
 				3CB0E6EE18C8B9E2009CE8DB /* Images.xcassets */,
 				3CB0E6DD18C8B9E2009CE8DB /* Supporting Files */,
+				3C205ADB19083CC600B3C2B4 /* EDColoriOS7ViewController.h */,
+				3C205ADC19083CC600B3C2B4 /* EDColoriOS7ViewController.m */,
+				3C205ADF19083E5F00B3C2B4 /* EDColoriOS7ViewController.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -203,11 +204,13 @@
 			files = (
 				3CB0E6EF18C8B9E2009CE8DB /* Images.xcassets in Resources */,
 				3CE9EC2518FC648D0034ADA7 /* EDSecondViewController.xib in Resources */,
+				3C205AE41908448B00B3C2B4 /* EDColoriOS7ViewCell.xib in Resources */,
 				3C562C6618DC8B4500DE3F38 /* Images in Resources */,
 				3CE9EC2318FC64850034ADA7 /* EDFirstViewController.xib in Resources */,
 				3CB0E6E118C8B9E2009CE8DB /* InfoPlist.strings in Resources */,
 				3CE9EC0B18FC5FB80034ADA7 /* EDThirdViewController.xib in Resources */,
 				3CE9EC0818FC5FB80034ADA7 /* EDFourthViewController.xib in Resources */,
+				3C205AE019083E5F00B3C2B4 /* EDColoriOS7ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE9EC0918FC5FB80034ADA7 /* EDSecondViewController.m in Sources */,
+				3C205ADD19083CC600B3C2B4 /* EDColoriOS7ViewController.m in Sources */,
 				3CE9EC0618FC5FB80034ADA7 /* EDFirstViewController.m in Sources */,
 				3CB0E71C18C8BB08009CE8DB /* EDAppDelegate.m in Sources */,
 				3CE9EC0718FC5FB80034ADA7 /* EDFourthViewController.m in Sources */,
