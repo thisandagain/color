@@ -8,18 +8,13 @@
 //
 
 #import "UIColor+iOS7.h"
+#import "UIColor+Hex.h"
 
 @implementation UIColor (iOS7)
 
-#define colorFromInteger(Color) [UIColor               \
-    colorWithRed:((Color & 0xFF0000) >> 16) / 255.0    \
-    green:((Color & 0xFF00) >> 8) / 255.0              \
-    blue:(Color & 0xFF) / 255.0                        \
-    alpha:1]
-
 #define gradientPair(name, start, end)                                              \
-+ (instancetype)iOS7##name##GradientStartColor { return colorFromInteger(start); }  \
-+ (instancetype)iOS7##name##GradientEndColor { return colorFromInteger(end); }      \
++ (instancetype)iOS7##name##GradientStartColor { return [UIColor colorWithHex:start]; }  \
++ (instancetype)iOS7##name##GradientEndColor { return [UIColor colorWithHex:end]; }      \
 + (NSArray *)iOS7##name##Gradient { return @[(id)UIColor.iOS7##name##GradientStartColor, (id)UIColor.iOS7##name##GradientEndColor]; }
 
 + (NSArray *)iOS7GradientPairs
@@ -55,17 +50,17 @@
              ];
 }
 
-+ (instancetype)iOS7redColor { return colorFromInteger(0xFF3B30); }
-+ (instancetype)iOS7orangeColor { return colorFromInteger(0xFF9500); }
-+ (instancetype)iOS7yellowColor { return colorFromInteger(0xFFCC00); }
-+ (instancetype)iOS7greenColor { return colorFromInteger(0x4CD964); }
-+ (instancetype)iOS7tealColor { return colorFromInteger(0x34AADC); }
-+ (instancetype)iOS7blueColor { return colorFromInteger(0x007AFF); }
-+ (instancetype)iOS7violetColor { return colorFromInteger(0x5856D6); }
-+ (instancetype)iOS7magentaColor { return colorFromInteger(0xFF2D55); }
-+ (instancetype)iOS7darkGreyColor { return colorFromInteger(0x8E8E93); }
-+ (instancetype)iOS7lightGreyColor { return colorFromInteger(0xC7C7CC); }
-+ (instancetype)iOS7charcoalColor { return colorFromInteger(0x4A4A4A); }
++ (instancetype)iOS7redColor { return [UIColor colorWithHex:0xFF3B30]; }
++ (instancetype)iOS7orangeColor { return [UIColor colorWithHex:0xFF9500]; }
++ (instancetype)iOS7yellowColor { return [UIColor colorWithHex:0xFFCC00]; }
++ (instancetype)iOS7greenColor { return [UIColor colorWithHex:0x4CD964]; }
++ (instancetype)iOS7tealColor { return [UIColor colorWithHex:0x34AADC]; }
++ (instancetype)iOS7blueColor { return [UIColor colorWithHex:0x007AFF]; }
++ (instancetype)iOS7violetColor { return [UIColor colorWithHex:0x5856D6]; }
++ (instancetype)iOS7magentaColor { return [UIColor colorWithHex:0xFF2D55]; }
++ (instancetype)iOS7darkGreyColor { return [UIColor colorWithHex:0x8E8E93]; }
++ (instancetype)iOS7lightGreyColor { return [UIColor colorWithHex:0xC7C7CC]; }
++ (instancetype)iOS7charcoalColor { return [UIColor colorWithHex:0x4A4A4A]; }
 
 gradientPair(red, 0xFF5E3A, 0xFF2A68)
 gradientPair(orange, 0xFF9500, 0xFF5E3A)
