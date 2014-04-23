@@ -19,5 +19,6 @@ build/
 xcuserdata
 
 Pods
+Podfile.lock
 EDColor.xcworkspace
 
