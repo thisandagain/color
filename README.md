@@ -1,6 +1,9 @@
 ## Color
 
-[![Build Status](https://travis-ci.org/thisandagain/color.svg)](https://travis-ci.org/thisandagain/color)
+[![Build Status](http://img.shields.io/travis/thisandagain/color.svg?style=flat)](https://travis-ci.org/thisandagain/color)
+[![Version](http://img.shields.io/cocoapods/v/EDColor.svg?style=flat)](http://cocoadocs.org/docsets/EDColor)
+[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoadocs.org/docsets/EDColor)
+
 
 ### Getting Started
 The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org), but otherwise you can add the `EDColor` directory to your project and...
