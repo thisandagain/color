@@ -128,7 +128,59 @@
     STAssertEqualsWithAccuracy(alpha, 0.75f, TEST_ACCURACY, nil);
 }
 
-- (void)testSpinOffset
+- (void)testSaturate
+{
+    UIColor *base   = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color  = [base saturate:-1.0f];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testDesaturate
+{
+    UIColor *base   = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color  = [base desaturate:1.0f];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.5f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testLighten
+{
+    UIColor *base   = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color  = [base lighten:1.0f];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 1.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testDarken
+{
+    UIColor *base   = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+    UIColor *color  = [base darken:1.0f];
+    
+    SPLIT_RESULT_TO_RGBA
+    
+    STAssertEqualsWithAccuracy(red, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(green, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(blue, 0.0f, TEST_ACCURACY, nil);
+    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+}
+
+- (void)testSpin
 {
     UIColor *base   = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
     UIColor *color  = [base spin:120.0f];
