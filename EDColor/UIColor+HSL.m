@@ -44,6 +44,32 @@
     return [UIColor colorWithHue:hue saturation:saturation lightness:lightness alpha:alpha];
 }
 
+- (UIColor *)saturate:(CGFloat)amount
+{
+    return [self offsetWithHue:0.0f saturation:amount lightness:0.0f alpha:0.0f];
+}
+
+- (UIColor *)desaturate:(CGFloat)amount
+{
+    return [self offsetWithHue:0.0f saturation:-amount lightness:0.0f alpha:0.0f];
+}
+
+- (UIColor *)lighten:(CGFloat)amount
+{
+    return [self offsetWithHue:0.0f saturation:0.0f lightness:amount alpha:0.0f];
+}
+
+- (UIColor *)darken:(CGFloat)amount
+{
+    return [self offsetWithHue:0.0f saturation:0.0f lightness:-amount alpha:0.0f];
+}
+
+- (UIColor *)spin:(CGFloat)angle
+{
+    angle /= 360;
+    return [self offsetWithHue:angle saturation:0.0f lightness:0.0f alpha:0.0f];
+}
+
 #pragma mark - Private
 
 /**
