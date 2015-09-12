@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EDColor"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A collection of categories and utilities that extend UIColor."
   s.homepage     = "https://github.com/thisandagain/color"
   s.license      = 'MIT'
