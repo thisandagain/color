@@ -4,7 +4,6 @@ before_install:
   - brew uninstall xctool
   - brew install xctool
   - export LANG=en_US.UTF-8
-  - gem i cocoapods --no-ri --no-rdoc
-xcode_workspace: EDColor.xcworkspace
-xcode_scheme: Tests
+xcode_project: EDColor.xcodeproj
+xcode_scheme: EDColor
 xcode_sdk: iphonesimulator

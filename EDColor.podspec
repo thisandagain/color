@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Andrew Sliwinski" => "andrewsliwinski@acm.org", "Daniel Doubrovkine" => "dblock@dblock.org" }
   s.source       = { :git => "https://github.com/thisandagain/color.git", :tag => "v1.0.0" }
   s.platform     = :ios, '6.0'
-  s.source_files = 'EDColor'
+  s.source_files = 'Source'
   s.frameworks   = 'UIKit'
   s.requires_arc = true
 end
-
