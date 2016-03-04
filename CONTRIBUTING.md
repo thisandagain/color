@@ -26,20 +26,18 @@ git checkout -b my-feature-branch
 
 #### Tools
 
-Install CocoaPods and XCTool.
+Install XCTool.
 
 ```
-gem install cocoapods
 brew install xctool
 ```
 
-#### Pod Install and Test
+#### Test
 
 Ensure that you can build the project and run tests.
 
 ```
-pod install
-xctool -workspace EDColor.xcworkspace -scheme Tests -sdk iphonesimulator build test
+xctool -project EDColor.xcodeproj -scheme EDColor -sdk iphonesimulator build test
 ```
 
 #### Write Tests

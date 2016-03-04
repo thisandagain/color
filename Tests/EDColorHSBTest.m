@@ -6,8 +6,13 @@
 //  Copyright (c) 2012 Andrew Sliwinski. All rights reserved.
 //
 
-#import "EDColorHSBTest.h"
+@import XCTest;
+#import "Macros.h"
 #import "UIColor+HSB.h"
+
+@interface EDColorHSBTest : XCTestCase
+
+@end
 
 @implementation EDColorHSBTest
 
@@ -18,10 +23,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 0.5f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 0.5f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testHueOffsetRotate
@@ -31,10 +36,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testHueOffsetBack180
@@ -44,10 +49,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 0.5f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 0.5f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testHueOffsetBack720
@@ -57,10 +62,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testSaturationOffset
@@ -70,10 +75,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 0.5f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 0.5f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testBrightnessOffset
@@ -83,10 +88,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 0.5f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 0.5f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testBrightnessOffsetClamp
@@ -96,10 +101,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testAlphaOffset
@@ -109,10 +114,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 0.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 0.0f, TEST_ACCURACY);
 }
 
 - (void)testAlphaOffsetClamp
@@ -122,10 +127,10 @@
     
     SPLIT_RESULT_TO_HSBA
     
-    STAssertEqualsWithAccuracy(hue, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(saturation, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(brightness, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 0.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(hue, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(saturation, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(brightness, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 0.0f, TEST_ACCURACY);
 }
 
 @end

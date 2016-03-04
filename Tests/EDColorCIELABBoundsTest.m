@@ -2,12 +2,16 @@
 //  EDColorCIELABBoundsTest.m
 //  color
 //
-//  Created by Matthew Smith on 2/11/13.
-//  Copyright (c) 2012 Matthew Smith. All rights reserved.
+//  Created by James Hughes on 2/29/16.
+//  Copyright © 2016 thiandagain. All rights reserved.
 //
 
-#import "EDColorCIELABBoundsTest.h"
+#import <XCTest/XCTest.h>
 #import "UIColor+CIELAB.h"
+
+@interface EDColorCIELABBoundsTest : XCTestCase
+
+@end
 
 @implementation EDColorCIELABBoundsTest
 

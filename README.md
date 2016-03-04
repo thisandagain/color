@@ -6,7 +6,7 @@
 
 
 ### Getting Started
-The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org), but otherwise you can add the `EDColor` directory to your project and...
+The quickest way to get started with `EDColor` is with [CocoaPods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage), but otherwise you can add the `EDColor` directory to your project and...
 ```objective-c
 #import "EDColor.h"
 ```
@@ -71,10 +71,10 @@ UIColor *greenGradientEnd = [UIColor iOS7greenGradientEndColor];
 ---
 
 ### Contributing
-Install CocoaPods with `gem install cocoapods`. Run `pod install`. Open EDColor.xcworkspace.
+See [contributing](CONTRIBUTING.md).
 
 ### Testing
-The test suite for `EDColor` is built using OCUnit. To run the test suite, simply open the project in XCode and choose "test" from the Product menu. Please run and augment the tests prior to submitting a pull request.
+The test suite for `EDColor` is built using XCTest. To run the test suite, simply open the project in XCode and choose "test" from the Product menu. Please run and augment the tests prior to submitting a pull request.
 
 ### iOS Support
 EDColor is tested on iOS 5 and up. Older versions of iOS may work but are not currently supported.

@@ -6,8 +6,13 @@
 //  Copyright (c) 2012 Andrew Sliwinski. All rights reserved.
 //
 
-#import "EDColorCrayolaTest.h"
+#import <XCTest/XCTest.h>
+#import "Macros.h"
 #import "UIColor+Crayola.h"
+
+@interface EDColorCrayolaTest : XCTestCase
+
+@end
 
 @implementation EDColorCrayolaTest
 
@@ -17,10 +22,10 @@
     
     SPLIT_RESULT_TO_RGBA
     
-    STAssertEqualsWithAccuracy(red, 0.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(green, 0.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(blue, 0.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(red, 0.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(green, 0.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(blue, 0.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testAquamarine
@@ -29,10 +34,10 @@
     
     SPLIT_RESULT_TO_RGBA
     
-    STAssertEqualsWithAccuracy(red, 0.47058823529411764f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(green, 0.8588235294117647f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(blue, 0.8862745098039215f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(red, 0.47058823529411764f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(green, 0.8588235294117647f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(blue, 0.8862745098039215f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 - (void)testMacaroniAndCheese
@@ -41,10 +46,10 @@
     
     SPLIT_RESULT_TO_RGBA
     
-    STAssertEqualsWithAccuracy(red, 1.0f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(green, 0.7411764705882353f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(blue, 0.5333333333333333f, TEST_ACCURACY, nil);
-    STAssertEqualsWithAccuracy(alpha, 1.0f, TEST_ACCURACY, nil);
+    XCTAssertEqualWithAccuracy(red, 1.0f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(green, 0.7411764705882353f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(blue, 0.5333333333333333f, TEST_ACCURACY);
+    XCTAssertEqualWithAccuracy(alpha, 1.0f, TEST_ACCURACY);
 }
 
 @end
