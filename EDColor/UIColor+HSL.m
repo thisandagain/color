@@ -37,9 +37,9 @@
     
     // Calculate offsets
     hue         = fmodf(hue + h, 1.0f);
-    saturation  = [self clamp:(saturation + s)];
-    lightness   = [self clamp:(lightness + l)];
-    alpha       = [self clamp:(alpha + a)];
+    saturation  = clamp(saturation + s);
+    lightness   = clamp(lightness + l);
+    alpha       = clamp(alpha + a);
     
     return [UIColor colorWithHue:hue saturation:saturation lightness:lightness alpha:alpha];
 }
@@ -75,16 +75,16 @@
 /**
  * Ternary clamp (0.0f to 1.0f)
  *
- * @param {CGFloat} Input
+ * @param a Input
  *
  * @return {CGFloat}
  */
-- (CGFloat)clamp:(CGFloat)a
+static CGFloat clamp (CGFloat a)
 {
-    static const CGFloat min = 0.0f;
-    static const CGFloat max = 1.0f;
-    
-    return (a > max) ? max : ((a < min) ? min : a);
+	static const CGFloat min = 0.0f;
+	static const CGFloat max = 1.0f;
+
+	return (a > max) ? max : ((a < min) ? min : a);
 }
 
 /**
